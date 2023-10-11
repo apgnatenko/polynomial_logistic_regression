@@ -1,1 +1,1 @@
-This repository contains functions to create polynomial logistic regression. To see how it works check out notebook.ipynb.
+This repository contains class to create basic or polynomial logistic regression. To see how it works check out notebook.ipynb.

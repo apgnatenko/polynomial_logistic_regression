@@ -7,8 +7,7 @@ def load_data(filename):
     y = data[:,2]
     return X, y
 
-def sig(z):
- 
+def sigmoid(z):
     return 1/(1+np.exp(-z))
 
 def map_feature(X1, X2):
@@ -54,7 +53,7 @@ def plot_decision_boundary(w, b, X, y):
         # Evaluate z = theta*x over the grid
         for i in range(len(u)):
             for j in range(len(v)):
-                z[i,j] = sig(np.dot(map_feature(u[i], v[j]), w) + b)
+                z[i,j] = sigmoid(np.dot(map_feature(u[i], v[j]), w) + b)
         
         # important to transpose z before calling contour       
         z = z.T
