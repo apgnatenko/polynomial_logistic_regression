@@ -35,7 +35,6 @@ def plot_data(X, y, pos_label="y=1", neg_label="y=0"):
     
 def plot_decision_boundary(w, b, X, y):
     # Credit to dibgerge on Github for this plotting code
-     
     plot_data(X[:, 0:2], y)
     
     if X.shape[1] <= 2:
@@ -60,5 +59,4 @@ def plot_decision_boundary(w, b, X, y):
         
         # Plot z = 0.5
         plt.contour(u,v,z, levels = [0.5], colors="g")
-
-        
+   
